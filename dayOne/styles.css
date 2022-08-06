@@ -1,0 +1,57 @@
+* {
+  border: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  background-color: rgb(39, 47, 146);
+  color: white;
+  border-radius: 1rem;
+  padding: 1rem;
+}
+
+.buttons {
+  display: flex;
+  padding-top: 1rem;
+  border-top: white 1px solid;
+  gap: 1rem;
+}
+
+button {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  width: 4rem;
+  height: 2rem;
+  padding: 1rem;
+  cursor: pointer;
+  border-radius: 1rem;
+}
+
+button:hover {
+  filter: brightness(0.5);
+}
+
+button[id="subtract"] {
+  background: red;
+}
+button[id="reset"] {
+  background: white;
+}
+button[id="add"] {
+  background: green;
+}
